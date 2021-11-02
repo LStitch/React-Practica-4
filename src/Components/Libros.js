@@ -22,12 +22,12 @@ const {catalogo, agregar} = useContext(ElContext);
                 </thead>
                 <tbody>
                 {
-                    catalogo.map((l,i)=>{
-                    return(<tr key={i}>
-                    <td>{l.codigo}</td>
-                    <td>{l.titulo}</td>
-                    <td>{l.idioma}</td>
-                    <td>{<Button variant="dark" disabled={l.desactivado} onClick={()=>agregar(l)}>Cumplir</Button>}</td>
+                    catalogo.map((a,b)=>{
+                    return(<tr key={b}>
+                    <td>{a.codigo}</td>
+                    <td>{a.titulo}</td>
+                    <td>{a.idioma}</td>
+                    <td>{<Button variant="dark" disabled={a.desactivado} onClick={()=>agregar(a)}>Cumplir</Button>}</td>
                     </tr>)
                     })
                 }
